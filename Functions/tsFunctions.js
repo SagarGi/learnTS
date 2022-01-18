@@ -18,4 +18,9 @@ function add(x, y) {
 var myAdd = function (x, y) {
     return x + y;
 };
-console.log(myAdd(2, 3));
+// console.log(myAdd(2, 3));
+// function with optional chaining
+var optFunction = function (a, b) {
+    return b ? a + b : a;
+};
+console.log(optFunction(10));

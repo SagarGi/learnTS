@@ -25,4 +25,12 @@ let myAdd = function (x: number, y: number): number {
   return x + y;
 };
 
-console.log(myAdd(2, 3));
+// console.log(myAdd(2, 3));
+
+// function with optional chaining
+
+let optFunction = (a: number, b?: number): number => {
+  return b ? a + b : a;
+};
+
+console.log(optFunction(10));

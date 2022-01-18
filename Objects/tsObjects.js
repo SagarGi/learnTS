@@ -1,18 +1,13 @@
+// we can give a type to objects
 var details = {
     name: "sagar",
     age: 24,
-    sum: function add(a, b) {
-        return a + b;
-    }
+    address: "machapokhari",
+    phone: [982328732, 982329329]
 };
-// console.log(details.sum(3, 4));
-function greet(details) {
-    return "Hello " + details.name;
+// also while passing object as a parameter
+function printDetails(details) {
+    // your statements
+    console.log(details.name + details.address);
 }
-function greetWithInterface(details) {
-    return ("hello " +
-        details.name +
-        " Your were born in 2054" +
-        "your sum " +
-        details.sum(10, 14));
-}
+printDetails(details);
